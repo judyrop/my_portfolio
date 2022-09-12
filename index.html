@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/styles.css" type="text/Css">
+    <script src="https://kit.fontawesome.com/8e59f70d33.js" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/jd.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I am <span>Judy</span> <br>Chepkemoi Rop</h1>
+            </div>
+        </div>
+    </div>
+    <!---about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/jud.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a Computer science professional who is passionate about programming, software development - web,Java, Android development and software quality unit testing. My core values are excellence, leadership, teamwork, honesty, integrity, fairness,professionalism and respect for diversity. My objective is to nurture my talent, abilities and knowledge for the good of  the society. I strive to adhere to the firm belief in justice, close attention in the prosecution of it and the strictest integrity. To uphold my professionalism and adopt an open mind with an inner respect for diversity for the one thing that doesn't abide by majority rule is a person's conscience. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>Android, Java, Angular JS , Typescript, JavaScript, J QUERY,HTML,CSS,BOOTSTRAP</li>
+                            <li><span>Databases</span><br>Firebase,PostgreSQL ,MySQL,Oracle Database</li>
+                            <li><span>Web Api</span><br> using Postman,JSON</li>
+                            <li><span>Frameworks</span><br>Spark ,Node JS,Spring boot</li>
+                            <li><span>Software Quality Testing</span><br>Run tests to check the functionality of application.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Android Mobile application- News app</span><br>The application is all about showing news headlines and detail news from headline that one wants to explore from different channels.One is able to key in a channel of their preference and they can be able to see the headlines. It also allows one to save the headlines news for future reference into the database.</li>
+                            <li><span>Java Web app-Forest Service</span><br>The application keeps track of wildlife in the forest keeping records of non-endangered and endangered animals ,their age ,health and sites where they were seen. It keeps records of the ranger who saw and noted the sites where he/she has seen whichever animal.</li>
+                            <li><span>Web app with api Integration using Typescript and angular js</span><br>These application where a user can search for any repository from someone else github by searching his /her username.It shows all repositories in someone account.</li>
+                            <li><span>Networking and ICT support</span><br>Adrian Kenya</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Science in Computer Science</span><br>Kabarak University</li>
+                            <li><span>Software Development</span><br>Moringa School</li>
+                            <li><span>Kenya Certificate of Secondary Education</span><br>Tengecha Girls Secondary School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------Services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Android development</h2>
+                    <p>Develop mobile applications.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web development</h2>
+                    <p>Develop web applications</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Api Integration</h2>
+                    <p>Integrate RESTFUL APIS </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!--------portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/app1.jpg" >
+                    <div class="layer">
+                        <h3>News application</h3>
+                        <p>The application is all about showing news headlines and detail news from headline that one wants to explore from different channels.One is able to key in a channel of their preference and they can be able to see the headlines. It also allows one to save the headlines news for future reference into the database</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/app2.jpg" >
+                    <div class="layer">
+                        <h3>Wildlife Tracker</h3>
+                        <p>The application keeps track of wildlife in the forest keeping records of non-endangered and endangered animals ,their age ,health and sites where they were seen. It keeps records of the ranger who saw and noted the sites where he/she has seen whichever animal</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/code.jpg" >
+                    <div class="layer">
+                        <h3>Github Api</h3>
+                        <p>These application where a user can search for any repository from someone else github by searching his /her username.It shows all repositories in someone account</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>judyrop97@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0722887764</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="image/memo_Rop_resume.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name ="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Judy.Made with <i class="fa-solid fa-heart"></i> by coding</p>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
